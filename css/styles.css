@@ -1,0 +1,353 @@
+body {
+    font-size: 100%;
+    color: #ffff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #f6b319;
+}
+
+
+#logo-img {
+    margin-left: 10px;
+}
+
+.columns{
+    padding-top: 1opx;
+    margin-left: 10px;
+}
+
+.navbar-brand .name{
+    color: #ffff;
+    display: inline;
+    font-size: 4vw;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px #222;
+    margin: 0;
+}
+
+p.kosherstar{
+    margin: 0;
+    line-height: 0.2;
+}
+
+
+
+.navbar-brand span {
+    font-size: 10px;
+    font-weight: lighter;
+    color: #ffff90;
+}
+
+/* .hamburger{
+    margin-right: 10px;
+    float: right;
+} */
+
+/* .nav-item{
+    line-height: 0.9;
+} */
+
+
+
+.navbar-toggler{
+    width: auto;
+    float: right;
+    border: transparent;
+    background-color: #f6b319;
+}
+
+.navbar-collapse{
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+
+/* .nav-item {
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    padding: 0;
+} */
+
+
+.nav-list a:hover{
+    background: #61122f;
+    color: #f6b319;
+}
+
+.navbar-toggler:hover{
+    background-color: rgb(253, 245, 214);
+}
+
+/** HOME PAGE **/
+
+/** JUMBOTRON **/
+
+.jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/** >=1200**/
+
+@media (min-width: 1200px) {
+    .container .jumbotron {
+      background: url('../jumbotron_1200.jpg') no-repeat;
+      height: 500px;
+    }
+}
+
+/** 768 to 1199 **/
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container .jumbotron {
+      background: url('../jumbotron_992.jpg') no-repeat;
+      height: 400px;
+    }
+}
+
+/** <768 **/
+
+@media (max-width: 767px) {
+    .container .jumbotron {
+        background: url('../jumbotron_768.jpg') no-repeat;
+        height: 300px;
+    }
+
+    .menu-item-photo{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu-item-tile .col-sm-5 .menu-item-price{
+        text-align: center;
+    }
+
+    .menu-item-description{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+
+/** MENU CATEGORY**/
+
+
+.menu-head{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+.col-lg-3 .col-md-4{
+    margin: auto;
+}
+
+.category-tile{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #3F0C1F;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-tile:hover{
+    box-shadow: 0 0 10px #bb7891;
+}
+
+.category-tile span{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #222;
+    opacity: .8;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: azure;
+    /** padding-left: 5px;
+    padding-right: 3px;
+    padding-bottom: 2px; **/
+}
+
+
+
+
+/** HOME PAGE TILES **/
+
+.menu-tile, .special-tile, .map-tile{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #3F0C1F;
+    overflow: hidden;
+}
+
+.menu-tile:hover, .special-tile:hover, .map-tile:hover{
+    box-shadow: 0 0 10px #bb7891;
+}
+
+.row .menu-tile{
+    background: url('../menu-tile.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.row .special-tile{
+    background: url('../specials-tile.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.tiles span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #222;
+    opacity: .8;
+    text-transform: uppercase;
+    color: azure;
+    font-size: 120%;
+}
+
+.panel-footer{
+    background-color: #222;
+    color: #f6b319;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
+
+#hours span, #address span, #testimonials span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#testimonials p{
+    font-style: italic;
+}
+
+.info section{
+    text-align: center;
+    font-size: 80%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.info section span{
+    font-size: 100%;
+    line-height: 2;
+}
+
+#address .delivery{
+    margin-top: 5px;
+    color: rgb(58, 128, 0);
+    font-size: 90%;
+}
+
+.panel-footer .text-center{
+    margin-top: 20px;
+    font-size: 50%;
+}
+
+.panel-footer section hr{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** MENU ITEM TILES SINGLE CATEGORY **/
+
+.single-category-page{
+    margin: auto;
+}
+
+
+.single-head{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+
+
+.menu-item-photo{
+    background-image: url(../menu-tile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 150px;
+    max-width: 250px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 15px #3F0C1F;
+}
+
+.menu-item-photo:hover{
+    box-shadow: 0 0 10px #bb7891;
+}
+
+.menu-item-photo .item-code{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.menu-item-tile .menu-item-price{
+    margin-top: 5px;
+    text-align: right;
+}
+
+.menu-item-tile .menu-item-price span{
+    font-size: 80%;
+}
+
+.menu-item-description{
+    font-size: 90%;
+    font-style: italic;
+}
+
+.menu-item-description span{
+    font-size: 130%;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.item-code{
+    padding: 5px;
+    background-color: #222;
+    opacity: .8;
+    border: none;
+    
+}
+
